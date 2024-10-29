@@ -398,7 +398,7 @@ To start using your cluster, you need to run the following as a regular user:
 
 Alternatively, if you are the root user, you can run:
 
-  export KUBECONFIG=/etc/kubernetes/admin.conf
+  export KUBECONFIG=/etc/kubernetes/admin.conf  
 
 You should now deploy a pod network to the cluster.
 Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
@@ -411,7 +411,7 @@ kubeadm join 192.168.100.11:6443 --token 03oevc.04y6ru2b2yba8xtu \
 ```
 - Sau khi tạo xong, chạy lệnh:
 ```
-KUBECONFIG=/etc/kubernetes/admin.conf
+export KUBECONFIG=/etc/kubernetes/admin.conf
 ```
 - Kiểm tra cài đặt thông qua `kubectl config view`
 

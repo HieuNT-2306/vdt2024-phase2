@@ -35,3 +35,28 @@ với EC:8, K=16 là cấp cao nhất, EC:4 là mặc định.
 
 ![alt text](/Picture/minio-ec.png)
 
+## IV. Tính số lương request
+- Để tính số lượng request cùng lúc cho 1 node, ta có công thức bằng:
+```
+số lương req cùng lúc = số lượng ram/ram cho mỗi request
+```
+- Với ram cho mỗi request được tính bằng:
+```
+ram mỗi request = (2176 KiB * số lượng Drive) + (2*10MiB)+  (2*1MiB)
+```
+- 10MiB là kích thước khối EC mặc định v1. 1MiB là kích thước khối EC mặc định v2.
+
+## V. Cấu hình của một cụm MinIO:
+- Tối thiểu:
+  - 4 Node server
+  - Mỗi node có cấu hình:
+    - 2 CPU Core
+    - 2 GiB Ram
+    - 20+ GiB Disk
+
+- Khuyên dùng:
+  - 4+ Node server
+  - Mỗi nốt có cấu hình
+    - 4 CPU Core
+    - 4-8 GiB Ram
+    - 1+ TiB Disk
