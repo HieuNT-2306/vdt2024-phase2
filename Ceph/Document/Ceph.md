@@ -4,7 +4,8 @@
 ## I. Định nghĩa về CEPH và RADOS:
 - Ceph là 1 nền tảng mã nguồn mở, hệ thống lưu trữ bằng phần cứng, phát triển và bảo trì bởi Red Hat.
 - Được sinh ra để tránh vấn đề sở hữu độc quyền của DataCenter.
-![alt text](../Picture/image-1.png)
+![alt text](/Picture/image.png)
+![alt text](/Picture/image-1.png)
 - Ceph là một (Software-Defined Storage): Hệ thống lưu trữ định dạng bằng phần mềm, trong đó phần mềm điều khiển các nhiệm vụ và chức năng liên quan đến lưu trữ độc lập với phần cứng cơ bản. SDS trừu tượng hóa tài nguyên lưu trữ khỏi phần cứng vật lý, cung cấp tính linh hoạt, mở rộng. Các lợi thế của SDS
     - Portable: Miễn chạy được linux là chạy được ceph
     - Abstract: tách rõ phần mềm và phần cứng
