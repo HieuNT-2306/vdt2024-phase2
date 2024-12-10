@@ -174,7 +174,7 @@ $ echo "Đây là 1 log mới" >> /tmp/test.log
 
 $ /kafka/bin/kafka-console-consumer.sh --topic test-logs --from-beginning --bootstrap-server 171.254.95.193:9092
 {"message":"Đây là 1 log mới","hostname":"ceph-node-2","tag":"test.log","time":"2024-10-30 15:20:03 +0700"}
-
+x
 # Kiểm tra ở bên clickhouse thông qua lệnh SELECT:
 SELECT *
 FROM logs
